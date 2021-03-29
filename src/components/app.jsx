@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 import PageLayout from '../layouts/page.layout'
 import Header from '../layouts/header'
 import Footer from '../layouts/footer'
@@ -17,7 +16,7 @@ class App extends Component {
 
   render() {
     return (
-      <PageLayout className={classNames('min-height-full')}>
+      <PageLayout>
         <Header />
         <Footer />
       </PageLayout>
