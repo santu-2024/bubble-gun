@@ -1,9 +1,10 @@
-import './app.styles.css'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import PageLayout from '../layouts/page.layout'
 import Header from '../layouts/header'
 import Footer from '../layouts/footer'
+import './app.css'
 
 class App extends Component {
   static propTypes = {
@@ -16,8 +17,8 @@ class App extends Component {
 
   render() {
     return (
-      <PageLayout>
-        <Header className='main' />
+      <PageLayout className={classNames('min-height-full')}>
+        <Header />
         <Footer />
       </PageLayout>
     )

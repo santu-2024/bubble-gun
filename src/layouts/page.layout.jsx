@@ -1,16 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 
-export const PageLayout = ({ children }) => (
-  <div className={classNames('container', 'text-center')}>
-    <div className='page-layout__viewport'>
-      {children}
-    </div>
-  </div>
+export const PageLayout = ({ className, children }) => (
+  <section className={className}>
+    {children}
+  </section>
 )
 PageLayout.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 }
 
 export default PageLayout
