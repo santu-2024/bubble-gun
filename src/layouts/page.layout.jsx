@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 export const PageLayout = ({ children }) => (
-  <div className='container text-center'>
-    <h1>Page Layout</h1>
+  <div className={classNames('container', 'text-center')}>
     <div className='page-layout__viewport'>
       {children}
     </div>

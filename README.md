@@ -1,5 +1,7 @@
 # Getting Started with The Bubble Project
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=cutpix&show_icons=true&theme=radical)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
