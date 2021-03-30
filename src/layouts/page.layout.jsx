@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export const PageLayout = ({ children }) => (
-  <section className='min-height-full'>
+  <section className='container-fluid main home-hero'>
     {children}
   </section>
 )
