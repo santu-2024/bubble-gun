@@ -2,7 +2,7 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/cutpix/bubble-gun/badge/main)](https://www.codefactor.io/repository/github/cutpix/bubble-gun/overview/main)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![DeepSource](https://deepsource.io/gh/cutpix/bubble-gun.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/cutpix/bubble-gun/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/cutpix/bubble-gun.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/cutpix/bubble-gun/?ref=repository-badge)
 
 ## Available Scripts
 
