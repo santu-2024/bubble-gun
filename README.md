@@ -1,5 +1,7 @@
 # Getting Started with The Bubble Gun Project
 
+[![CodeFactor](https://www.codefactor.io/repository/github/cutpix/bubble-gun/badge/main)](https://www.codefactor.io/repository/github/cutpix/bubble-gun/overview/main)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
