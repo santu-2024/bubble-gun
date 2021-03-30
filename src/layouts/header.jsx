@@ -12,7 +12,7 @@ export const Header = React.forwardRef(({ className, children, ...props }, ref) 
             <div className='navbar left flex-no-shrink width-full'>
               <div className='logo direction-row justify-center justify-start:md w-auto:md'>
                 <a href='/' className='flex items-center direction-row u-position-relative h-11 h-auto:md' role='button' tabIndex='-1' title='Back to timeline'>
-                  <span className='flex justify-center items-center w-19 w-auto:md'></span>
+                  <span className='flex justify-center items-center w-19 w-auto:md' />
                 </a>
               </div>
             </div>
@@ -20,14 +20,13 @@ export const Header = React.forwardRef(({ className, children, ...props }, ref) 
             <div className='navbar center z-10 flex-1 justify-center'>
               <div className='relative'>
                 <div className='flex direction-row items-center border-1 bg-white-ultra text-center rounded-full rounded:md relative transition--all'>
-                  <span className='absolute pin-l ml-2 cursor-pointer'></span>
+                  <span className='absolute pin-l ml-2 cursor-pointer' />
                   <input id='search' className='search-select-search color-darkest border-0 flex-1 block h-11 h-14:md text-s color-medium bg-transparent' placeholder='Search' />
                 </div>
               </div>
             </div>
 
-            <div className='navbar right'>
-            </div>
+            <div className='navbar right' />
 
             {children}
           </div>
