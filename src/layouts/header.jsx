@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-export const Header = React.forwardRef(({ className, children, ...props }, ref) => {
+export const Header = React.forwardRef(({ children, ...props }, ref) => {
   return (
     <header id='app-nav-bar' className={classNames('header', 'z-100')} role='navigation'>
       <div className='spacer'>&nbsp;</div>
