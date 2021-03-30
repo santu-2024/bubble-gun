@@ -277,8 +277,6 @@ summary {
 
 .holder {
   height: 48px;
-  -webkit-transition: height;
-  transition: height;
   -webkit-transition: height .2s ease-in-out;
   transition: height .2s ease-in-out;
   -webkit-box-flex: 0;
@@ -539,10 +537,6 @@ summary {
 
 .u-position-relative {
   position: relative;
-}
-
-.h-11 {
-  height: 2.6rem !important;
 }
 
 .h-auto\:md {
