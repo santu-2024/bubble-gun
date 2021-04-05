@@ -10,13 +10,30 @@ import Thumbs from './components/Thumbs'
 import './app.css'
 import Image from './assets/images/models/thumb-img.jpg'
 
+const data = {
+  pageInfo: {
+    title: 'Welcome to Bubble Gun',
+    description: "Along the way, we are go… <a title='Welcome to Bubble Gun' href='/'>To Bubble Gun ...</a>"
+  },
+  modelsInfo: {
+    title: 'Galleries',
+    list: [
+      {
+        id: 1,
+        name: 'Lana Rhoades',
+        thumb: Image
+      }
+    ]
+  }
+};
+
 export default function App() {
   const [models, setModels] = useState([])
 
   const loadModels = async () => {
     try {
-      const response = await fetch('/api/models')
-      const models = await response.json()
+      // const response = await fetch('/api/models')
+      // const models = await response.json()
       setModels(models)
     } catch (error) {
       console.error(error)
@@ -27,30 +44,15 @@ export default function App() {
     loadModels()
   }, [])
 
-  const pageInfo = {
-    title: 'Welcome to Bubble Gun',
-    description: "Along the way, we are go… <a title='Welcome to Bubble Gun' href='/'>To Bubble Gun ...</a>"
-  }
-  const data = {
-    title: 'Galleries',
-    models: [
-      {
-        id: 1,
-        name: 'Lana Rhoades',
-        thumb: Image
-      }
-    ]
-  }
-
   return (
     <PageLayout>
       <Header />
       <Main>
-        <PageContent title={pageInfo.title} role='contentinfo'>
-          <div className='text more' dangerouslySetInnerHTML={{ __html: pageInfo.description }}></div>
+        <PageContent title={data.pageInfo.title} role='contentinfo'>
+          <div className='text more' dangerouslySetInnerHTML={{ __html: data.pageInfo.description }}></div>
         </PageContent>
-        <PageContent title={data.title}>
-          <Thumbs models={data.models} />
+        <PageContent title={data.modelsInfo.title}>
+          <Thumbs models={data.modelsInfo.list} />
         </PageContent>
       </Main>
     </PageLayout>
