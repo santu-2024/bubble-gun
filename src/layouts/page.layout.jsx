@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export const PageLayout = ({ children }) => (
 
-  <section className='container-fluid main home-hero'>
+  <section className='page'>
     {children}
   </section>
 )
