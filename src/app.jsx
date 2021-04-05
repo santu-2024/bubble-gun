@@ -21,7 +21,10 @@ const data = {
       {
         id: 1,
         name: 'Lana Rhoades',
-        thumb: Image
+        thumb: Image,
+        photos: {
+          count: 72
+        }
       }
     ]
   }
