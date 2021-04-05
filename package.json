@@ -1,8 +1,9 @@
 {
   "name": "bubble-gun",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "Just focus on the code.",
+  "main": "src/index.js",
   "private": true,
-  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

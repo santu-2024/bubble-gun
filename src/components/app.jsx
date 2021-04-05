@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import PageLayout from '../layouts/page.layout'
 import Main from './Main';
 import Header from '../layouts/header'
-
-import './app.css'
-import '../layouts/main.styles.css'
 import PageContent from './PageContent'
+import Thumbs from './Thumbs'
+
 // import 'bootstrap/dist/css/bootstrap.css';
+import './app.css'
+
+import Image from '../assets/images/models/thumb-img.jpg'
 
 class App extends Component {
   static propTypes = {
@@ -19,19 +21,30 @@ class App extends Component {
   }
 
   render() {
+    const top_banner = {
+      title: 'Welcome to Bubble Gun',
+      description: "Along the way, we are go… <a title='Welcome to Bubble Gun' href='/'>To Bubble Gun ...</a>"
+    }
+    const data = {
+      title: 'Galleries',
+      models: [
+        {
+          id: 1,
+          name: 'Lana Rhoades',
+          thumb: Image
+        }
+      ]
+    }
+
     return (
       <PageLayout>
         <Header />
         <Main>
-          <PageContent title='Welcome to Bubble Gun' role='contentinfo'>
-            <div className='text more'>
-              In this mini series we are going to Design and Build a chat application using Socket.io. We will first discuss basic design concepts while exploring the design for this application in Sketch. We will then move on to laying out our application in HTML and CSS, and lastly, will add Javascript to complete the functionality. Along the way, we are go… <a title='Welcome to Bubble Gun' href='/'>To Bubble Gun ...</a>
-            </div>
+          <PageContent title={top_banner.title} role='contentinfo'>
+            <div className='text more' dangerouslySetInnerHTML={{ __html: top_banner.description }}></div>
           </PageContent>
           <PageContent title='Galleries'>
-            <div className='grid masonry-thumbs'>
-
-            </div>
+            <Thumbs models={data.models} />
           </PageContent>
         </Main>
       </PageLayout>

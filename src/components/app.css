@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap");
 
 * {
@@ -45,6 +46,12 @@ body {
   -o-transition: background-color .6s, color .6s;
 }
 
+@media all and (min-width:1280px) {
+  .page {
+    background: transparent url('//content2.babesandbitches.net/images/babesandbitches.net/2015/img/girl.png') right 50px no-repeat fixed;
+  }
+}
+
 .page {
   display: table;
   width: 100%;
@@ -77,4 +84,112 @@ body {
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
+}
+
+.headline {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+.headline .title {
+  font-family: 'Poppins';
+  font-size: 24px;
+  margin-right: 18px;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.title.upper {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.thumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 16.66%;
+  padding: 5px;
+}
+
+.thumb a {
+  display: inline-block;
+  min-width: 1px;
+}
+
+.thumb a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow .4s;
+  transition: -webkit-box-shadow .4s;
+  -o-transition: box-shadow .4s;
+  transition: box-shadow .4s, -webkit-box-shadow .4s;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.thumb .box-img {
+  padding-top: 133.33333%;
+}
+
+.thumb .box-img {
+  position: relative;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+}
+
+.thumb img {
+  display: block;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.thumb .box-img .thumb-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+img {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
