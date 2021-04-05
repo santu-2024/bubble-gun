@@ -32,8 +32,8 @@ export default function App() {
 
   const loadModels = async () => {
     try {
-      // const response = await fetch('/api/models')
-      // const models = await response.json()
+      const response = await fetch('/api/models')
+      const models = await response.json()
       setModels(models)
     } catch (error) {
       console.error(error)
