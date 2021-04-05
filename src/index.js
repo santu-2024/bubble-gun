@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom'
 const MOUNT_NODE = document.getElementById('root')
 
 let render = () => {
-  const App = require('./components/app').default
+  const App = require('./app').default
 
   ReactDOM.render(
     <React.StrictMode>
@@ -14,6 +14,10 @@ let render = () => {
     </React.StrictMode>,
     MOUNT_NODE
   )
+}
+
+if (module.hot) {
+  module.hot.accept()
 }
 
 // Let's Go!

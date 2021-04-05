@@ -1,15 +1,16 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
-import PageLayout from '../layouts/page.layout'
-import Main from './Main';
-import Header from '../layouts/header'
-import PageContent from './PageContent'
-import Thumbs from './Thumbs'
+
+import PageLayout from './layouts/page.layout'
+import Header from './layouts/header'
+import Main from './components/Main';
+import PageContent from './components/PageContent'
+import Thumbs from './components/Thumbs'
 
 // import 'bootstrap/dist/css/bootstrap.css';
 import './app.css'
 
-import Image from '../assets/images/models/thumb-img.jpg'
+import Image from './assets/images/models/thumb-img.jpg'
 
 class App extends Component {
   static propTypes = {
