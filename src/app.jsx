@@ -9,7 +9,7 @@ import Thumbs from './components/Thumbs'
 // import 'bootstrap/dist/css/bootstrap.css';
 import './app.css'
 
-import { actors_data } from './assets/data/actors_data'
+import { actors_data } from './assets/data/actors'
 
 const data = {
   pageInfo: {
