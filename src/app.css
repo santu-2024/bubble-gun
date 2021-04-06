@@ -173,6 +173,36 @@ svg:not(:root) {
   border-radius: 20px;
 }
 
+@media screen and (min-width: 1025px) {
+  .thumb a:hover {
+    -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+  }
+  .thumb a:hover .hidden {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 1;
+  }
+  .thumb a:hover .hidden .list-info .item {
+    color: #8f6b9c;
+  }
+  .thumb a:hover .hidden .list-info .item.second {
+    color: #f00eff;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .thumb a:hover .list-info .item {
+    color: #fff;
+  }
+  .thumb a:hover .box-info:before {
+    opacity: 1;
+  }
+  .thumb a:hover .box-info:after {
+    opacity: 0;
+  }
+}
+
 .thumb .box-img {
   padding-top: 133.33333%;
 }
@@ -285,11 +315,11 @@ img {
 
 .box-info:before {
   opacity: 0;
-  background: -webkit-linear-gradient(top, rgba(240, 14, 255, 0) 64%, rgba(240, 14, 255, 0) 60%, #f00eff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(64%, rgba(240, 14, 255, 0)), color-stop(60%, rgba(240, 14, 255, 0)), to(#f00eff));
-  background: -o-linear-gradient(top, rgba(240, 14, 255, 0) 64%, rgba(240, 14, 255, 0) 60%, #f00eff 100%);
-  background: linear-gradient(to bottom, rgba(240, 14, 255, 0) 64%, rgba(240, 14, 255, 0) 60%, #f00eff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f00eff', endColorstr='#f00eff', GradientType=0);
+  background: -webkit-linear-gradient(top, rgba(240, 14, 255, 0) 64%, rgba(240, 14, 255, 0) 60%, #e43f5a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(64%, rgba(240, 14, 255, 0)), color-stop(60%, rgba(240, 14, 255, 0)), to(#e43f5a));
+  background: -o-linear-gradient(top, rgba(240, 14, 255, 0) 64%, rgba(240, 14, 255, 0) 60%, #e43f5a 100%);
+  background: linear-gradient(to bottom, rgba(240, 14, 255, 0) 64%, rgba(240, 14, 255, 0) 60%, #e43f5a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e43f5a', endColorstr='#e43f5a', GradientType=0);
 }
 
 .box-info:after {
@@ -352,7 +382,7 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #8f6b9c;
+  color: #f8ede3;
   -webkit-transition: color .4s;
   -o-transition: color .4s;
   transition: color .4s;
