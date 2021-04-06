@@ -1,4 +1,4 @@
-# Getting Started with The Bubble Gun Project
+# Getting Started with ...
 
 [![Bubble Gun](https://i.postimg.cc/Yq4txdHM/bubble-gun-slim.jpg)](https://postimg.cc/vcsRYLTN)
 
