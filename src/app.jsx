@@ -8,33 +8,17 @@ import Thumbs from './components/Thumbs'
 
 // import 'bootstrap/dist/css/bootstrap.css';
 import './app.css'
-import Image from './assets/images/models/thumb-img.jpg'
+
+import { actors_data } from './assets/data/actors_data'
 
 const data = {
   pageInfo: {
     title: 'Welcome to Bubble Gun',
     description: "Along the way, we are go… <a title='Welcome to Bubble Gun' href='/'>To Bubble Gun ...</a>"
   },
-  modelsInfo: {
-    title: 'Galleries',
-    list: [
-      {
-        id: 1,
-        name: 'Lana Rhoades',
-        thumb: Image,
-        photos: {
-          count: 72
-        }
-      },
-      {
-        id: 2,
-        name: 'Jaclyn Taylor',
-        thumb: Image,
-        photos: {
-          count: 33
-        }
-      }
-    ]
+  thumbs: {
+    title: 'Model Index',
+    list: []
   }
 };
 
@@ -62,8 +46,8 @@ export default function App() {
         <PageContent title={data.pageInfo.title} role='contentinfo'>
           <div className='text more' dangerouslySetInnerHTML={{ __html: data.pageInfo.description }}></div>
         </PageContent>
-        <PageContent title={data.modelsInfo.title}>
-          <Thumbs models={data.modelsInfo.list} />
+        <PageContent title={data.thumbs.title}>
+          <Thumbs {...actors_data} />
         </PageContent>
       </Main>
     </PageLayout>
