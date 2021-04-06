@@ -178,14 +178,17 @@ svg:not(:root) {
     -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
   }
+
   .thumb a:hover .hidden {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     opacity: 1;
   }
+
   .thumb a:hover .hidden .list-info .item {
     color: #8f6b9c;
   }
+
   .thumb a:hover .hidden .list-info .item.second {
     color: #f00eff;
   }
@@ -195,9 +198,11 @@ svg:not(:root) {
   .thumb a:hover .list-info .item {
     color: #fff;
   }
+
   .thumb a:hover .box-info:before {
     opacity: 1;
   }
+
   .thumb a:hover .box-info:after {
     opacity: 0;
   }
@@ -233,12 +238,9 @@ svg:not(:root) {
 }
 
 img {
-  border: 0;
-}
-
-img {
   max-width: 100%;
   height: auto;
+  border: 0;
 }
 
 /* Thumb Component Styles */
