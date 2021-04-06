@@ -1,6 +1,6 @@
 # Getting Started with The Bubble Gun Project
 
-[![Bubble Logo](https://cutpix.github.com/bubble/images/png/bubble_cover.png)](https://cutpix.github.com/bubble)
+[![Bubble Gun](https://i.postimg.cc/Yq4txdHM/bubble-gun-slim.jpg)](https://postimg.cc/vcsRYLTN)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/cutpix/bubble-gun/badge/main)](https://www.codefactor.io/repository/github/cutpix/bubble-gun/overview/main)
 [![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/cutpix/bubble-gun)](https://github.com/cutpix/bubble-gun/pulls)
