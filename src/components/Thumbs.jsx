@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {ReactComponent as PictureIcon} from '../assets/icons/icon-photo.svg'
 
 const Thumbs = ({ models }) => {
   return (
@@ -17,7 +18,7 @@ const Thumbs = ({ models }) => {
                 <div className='description'>{actor.name}</div>
                 <ul className='list-info'>
                   <li className='item'>
-                    <svg className='svg-icon'></svg>
+                    <PictureIcon className='svg-icon'/>
                     <div className='value'>{actor.photos.count}</div>
                   </li>
                 </ul>

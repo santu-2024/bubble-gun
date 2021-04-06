@@ -25,6 +25,14 @@ const data = {
         photos: {
           count: 72
         }
+      },
+      {
+        id: 2,
+        name: 'Jaclyn Taylor',
+        thumb: Image,
+        photos: {
+          count: 33
+        }
       }
     ]
   }
