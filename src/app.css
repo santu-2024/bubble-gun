@@ -28,8 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px;
-  margin-right: 0px;
+  margin: 0;
+  margin-right: 0;
 }
 
 body {
@@ -162,7 +162,6 @@ svg:not(:root) {
   position: relative;
   overflow: hidden;
   -webkit-transition: -webkit-box-shadow .4s;
-  transition: -webkit-box-shadow .4s;
   -o-transition: box-shadow .4s;
   transition: box-shadow .4s, -webkit-box-shadow .4s;
   -webkit-border-radius: 20px;
