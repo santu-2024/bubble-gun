@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import './header.styles.css'
 
@@ -11,7 +12,9 @@ export const Header = React.forwardRef(({ children, ...props }, ref) => {
 })
 
 Header.displayName = 'PageLayout.Header'
-Header.propTypes = {}
+Header.propTypes = {
+  children: PropTypes.node
+}
 Header.defaultProps = {}
 
 export default Header

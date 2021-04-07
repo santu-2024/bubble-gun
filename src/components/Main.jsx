@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Main = (props) => {
   return (
@@ -6,6 +7,10 @@ const Main = (props) => {
       <div className='container'>{props.children}</div>
     </main>
   )
+}
+
+Main.protoTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default Main;
