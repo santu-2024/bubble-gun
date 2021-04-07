@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Main = (props) => {
+const Main = (children) => {
   return (
     <main className='main'>
-      <div className='container'>{props.children}</div>
+      <div className='container'>{children}</div>
     </main>
   )
 }
 
 Main.protoTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired
 }
 
 export default Main;
