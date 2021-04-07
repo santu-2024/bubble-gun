@@ -17,7 +17,8 @@ const Thumbs = ({ profiles, links }) => {
           <div key={index} className='thumb'>
             <a href={entry.href} title={entry.name}>
               <div className='box-img'>
-                <img className='thumb-img' alt={entry.name}
+                <img className='thumb-img'
+                  alt={entry.name}
                   src={entry.photo} />
               </div>
               <div className='box-info'>
