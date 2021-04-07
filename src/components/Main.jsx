@@ -10,7 +10,7 @@ const Main = (props) => {
 }
 
 Main.protoTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node
 }
 
 export default Main;
