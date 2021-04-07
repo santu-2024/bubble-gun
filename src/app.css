@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 0px;
   margin-right: 0px;
 }
 
@@ -157,12 +157,8 @@ svg:not(:root) {
 }
 
 .thumb a {
-  display: inline-block;
-  min-width: 1px;
-}
-
-.thumb a {
   display: block;
+  min-width: 1px;
   position: relative;
   overflow: hidden;
   -webkit-transition: -webkit-box-shadow .4s;
@@ -209,20 +205,13 @@ svg:not(:root) {
 }
 
 .thumb .box-img {
-  padding-top: 133.33333%;
-}
-
-.thumb .box-img {
   position: relative;
+  padding-top: 133.33333%;
 }
 
 .thumb img {
   display: block;
   width: 100%;
-}
-
-.thumb img {
-  display: block;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   overflow: hidden;
@@ -283,9 +272,7 @@ img {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: opacity .4s, -webkit-transform .4s;
-  transition: opacity .4s, -webkit-transform .4s;
   -o-transition: transform .4s, opacity .4s;
-  transition: transform .4s, opacity .4s;
   transition: transform .4s, opacity .4s, -webkit-transform .4s;
   -webkit-border-radius: 0 0 20px 20px;
   border-radius: 0 0 20px 20px;
