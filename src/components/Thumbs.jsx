@@ -2,13 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ReactComponent as PictureIcon } from '../assets/icons/icon-photo.svg'
 
-const Thumbs = ({ profiles, links }) => {
-  const data = profiles.map((profile) => {
-    let filteredLinks = links.filter((currentLink) => profile.id === currentLink.assigned)
-    let href = filteredLinks.length < 1 ? null : filteredLinks[0].href;
-    return { ...profile, href, count: filteredLinks.length }
-  })
-
+const Thumbs = ({ data }) => {
   return (
     <div className='thumbs'>
       {
@@ -38,8 +32,7 @@ const Thumbs = ({ profiles, links }) => {
   )
 }
 Thumbs.propTypes = {
-  profiles: PropTypes.array.isRequired,
-  links: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
 }
 
 export default Thumbs
