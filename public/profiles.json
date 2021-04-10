@@ -3,14 +3,12 @@
   "profiles": [{
     "_id": "jtaylor",
     "name": "Jaclyn Taylor",
-    "photo": "./static/media/jtaylor.bf03dbbf.jpg",
-    "href": "/jtaylor",
-    "count": 2
-  },{
-    "_id": "",
-    "name": "",
-    "photo": "",
-    "href": "",
-    "count": 23
+    "href": "https://www.freeones.com/jaclyn-taylor/bio",
+    "count": 1
+  }, {
+    "_id": "pmichova",
+    "name": "Patty Michova",
+    "href": "https://www.freeones.com/patty-michova/bio",
+    "count": 1
   }]
 }

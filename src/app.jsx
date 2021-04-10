@@ -5,10 +5,10 @@ import Main from './components/Main';
 import PageContent from './components/PageContent'
 import Thumbs from './components/Thumbs'
 import './app.css'
-import { pages } from './assets/data'
+import { pages, getProfiles } from './assets/data'
 
 export default function App() {
-  const initialState = { title: '', profiles: [] }
+  const initialState = getProfiles()
   const [data, setData] = useState(initialState)
 
   const loadData = async () => {
