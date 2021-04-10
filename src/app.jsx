@@ -5,10 +5,10 @@ import Main from './components/Main';
 import PageContent from './components/PageContent'
 import Thumbs from './components/Thumbs'
 import './app.css'
-import { pages, getProfiles } from './assets/data'
+import { storage } from './assets/data'
 
 export default function App() {
-  const initialState = getProfiles()
+  const initialState = storage.getProfiles()
   const [data, setData] = useState(initialState)
 
   const loadData = async () => {
@@ -22,7 +22,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    document.title = pages.main.title
+    document.title = storage.pages.main.title
     loadData()
   }, [])
 
@@ -30,8 +30,8 @@ export default function App() {
     <PageLayout>
       <Header />
       <Main>
-        <PageContent title={pages.main.title} role='contentinfo'>
-          <div className='text more'>{pages.main.description}</div>
+        <PageContent title={storage.pages.main.title} role='contentinfo'>
+          <div className='text more'>{storage.pages.main.description}</div>
         </PageContent>
         <PageContent title={data.title}>
           <Thumbs data={data.profiles} />
