@@ -2,7 +2,7 @@ import CoverMichova from '../images/models/pmichova.jpg'
 import CoverTaylor from '../images/models/jtaylor.jpg'
 
 const profiles = {
-  'title': 'Actors List',
+  'title': 'Profiles',
   'profiles': [{
       _id: 'jtaylor',
       name: 'Jaclyn Taylor',
@@ -28,7 +28,7 @@ const links = [{
   }
 ]
 
-export const storage = {
+const storage = {
   pages: {
     main: {
       title: 'Welcome to Bubble Gun',
@@ -50,4 +50,8 @@ export const storage = {
       profiles: linked_profiles
     }
   }
+}
+
+export {
+  storage
 }

@@ -4,11 +4,13 @@
     "_id": "jtaylor",
     "name": "Jaclyn Taylor",
     "href": "https://www.freeones.com/jaclyn-taylor/bio",
+    "photo": "./static/media/jtaylor.bf03dbbf.jpg",
     "count": 1
   }, {
     "_id": "pmichova",
     "name": "Patty Michova",
     "href": "https://www.freeones.com/patty-michova/bio",
+    "photo": "./static/media/pmichova.48b58c55.jpg",
     "count": 1
   }]
 }
