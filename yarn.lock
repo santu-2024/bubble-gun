@@ -7142,6 +7142,11 @@
   "resolved" "https://registry.npmjs.org/loglevel/-/loglevel-1.7.1.tgz"
   "version" "1.7.1"
 
+"logrocket@^1.0.15":
+  "integrity" "sha512-YRI0b3o+eLoATO6puoBolfSIRng6AwVFMTyUGCIJA7I9+1TXTO+SNzXaF1E3VVg1lcyxHsCvVfZy5Pmhu+xEQA=="
+  "resolved" "https://registry.npmjs.org/logrocket/-/logrocket-1.0.15.tgz"
+  "version" "1.0.15"
+
 "loose-envify@^1.1.0", "loose-envify@^1.4.0":
   "integrity" "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q=="
   "resolved" "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
