@@ -1,20 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import LogRocket from 'logrocket'
-
-LogRocket.init('micite/bubble-gun')
-LogRocket.identify('local-user')
 
 // Render Setup
 // ------------------------------------
 const MOUNT_NODE = document.getElementById('root')
 
 let render = () => {
-  const App = require('./app').default
+  const AppContainer = require('./containers/AppContainer').default
 
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <AppContainer />
     </React.StrictMode>,
     MOUNT_NODE
   )
