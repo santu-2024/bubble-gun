@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ReactComponent as PictureIcon } from '../assets/icons/icon-photo.svg'
+import { ReactComponent as PhotoIcon } from '../assets/icons/icon-photo.svg'
 
 const Thumbs = ({ data }) => {
   return (
     <div className='thumbs'>
       {
-        (data && data.length > 0) &&
+        data && data.length > 0 &&
         data.map((entry, index) =>
           <div key={index} className='thumb'>
             <a href={entry.href} title={entry.name}>
@@ -19,7 +19,7 @@ const Thumbs = ({ data }) => {
                 <div className='description'>{entry.name}</div>
                 <ul className='list-info'>
                   <li className='item'>
-                    <PictureIcon className='svg-icon' />
+                    <PhotoIcon className='svg-icon' />
                     <div className='value'>{entry.count}</div>
                   </li>
                 </ul>
@@ -32,7 +32,7 @@ const Thumbs = ({ data }) => {
   )
 }
 Thumbs.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired
 }
 
 export default Thumbs
