@@ -1,5 +1,3 @@
-# Getting Started with
-
 [![Bubble Gun](https://i.postimg.cc/Yq4txdHM/bubble-gun-slim.jpg)](https://postimg.cc/vcsRYLTN)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/cutpix/bubble-gun/badge/main)](https://www.codefactor.io/repository/github/cutpix/bubble-gun/overview/main)
