@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import LogRocket from 'logrocket'
+
+LogRocket.init('micite/bubble-gun')
+LogRocket.identify('local-user')
 
 // Render Setup
 // ------------------------------------
