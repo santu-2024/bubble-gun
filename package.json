@@ -2,6 +2,7 @@
   "name": "bubble-gun",
   "version": "0.0.1",
   "description": "Just focus on the code.",
+  "homepage": "https://hotheadz.web.app",
   "main": "src/index.js",
   "private": true,
   "dependencies": {

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import './Header.Styles.css'
+import './Header'
 
 export const Header = React.forwardRef(({ children, ...props }, ref) => {
   return (
