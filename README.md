@@ -1,11 +1,7 @@
-# Getting Started with
-
 [![Bubble Gun](https://i.postimg.cc/Yq4txdHM/bubble-gun-slim.jpg)](https://postimg.cc/vcsRYLTN)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/cutpix/bubble-gun/badge/main)](https://www.codefactor.io/repository/github/cutpix/bubble-gun/overview/main)
 [![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/cutpix/bubble-gun)](https://github.com/cutpix/bubble-gun/pulls)
-
-[![DeepSource](https://deepsource.io/gh/cutpix/bubble-gun.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/cutpix/bubble-gun/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/cutpix/bubble-gun.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/cutpix/bubble-gun/?ref=repository-badge)
 
 ## Available Scripts
 
