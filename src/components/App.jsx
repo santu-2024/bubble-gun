@@ -4,12 +4,14 @@ import Header from './common/Header'
 import Main from './Main'
 import PageContent from './PageContent'
 import Thumbs from './Thumbs'
+import HeroContent from './HeroContent'
 import './App.css'
 
 export default function App(props) {
   return (
     <PageLayout>
       <Header />
+      <HeroContent />
       <Main>
         <PageContent title={props.pages.main.title} role='contentinfo'>
           <div className='text more'>{props.pages.main.description}</div>
