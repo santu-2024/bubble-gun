@@ -1,7 +1,16 @@
-[{
-  "id": "jtaylor",
-  "name": "Jaclyn Taylor",
-  "photo": "./static/media/jtaylor.bf03dbbf.jpg",
-  "href": "",
-  "count": 2
-}]
+{
+  "title": "Profiles",
+  "profiles": [{
+    "_id": "jtaylor",
+    "name": "Jaclyn Taylor",
+    "photo": "./static/media/jtaylor.bf03dbbf.jpg",
+    "href": "/jtaylor",
+    "count": 2
+  },{
+    "_id": "",
+    "name": "",
+    "photo": "",
+    "href": "",
+    "count": 23
+  }]
+}

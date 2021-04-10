@@ -1,17 +1,32 @@
 import CoverMichova from '../images/models/pmichova.jpg'
 import CoverTaylor from '../images/models/jtaylor.jpg'
 
-export const profiles = [{
-    id: 'jtaylor',
-    name: 'Jaclyn Taylor',
-    photo: CoverTaylor
-  },
-  {
-    id: 'pmichova',
-    name: 'Patty Michova',
-    photo: CoverMichova
+export const pages = {
+  main: {
+    title: 'Welcome to Bubble Gun',
+    description: 'Along the way, we are go…',
+    sections: {
+      profiles: {
+        title: 'Actors'
+      }
+    } 
   }
-]
+}
+
+export const profiles = {
+  'title': 'Actors List',
+  'profiles': [{
+      id: 'jtaylor',
+      name: 'Jaclyn Taylor',
+      photo: CoverTaylor
+    },
+    {
+      id: 'pmichova',
+      name: 'Patty Michova',
+      photo: CoverMichova
+    }
+  ]
+}
 
 export const links = [{
     title: 'Jaclyn Taylor',
@@ -29,3 +44,11 @@ export const links = [{
     assigned: 'pmichova'
   }
 ]
+
+export const getProfiles = () => {
+  return profiles.map((profile) => {
+    let assigned_links = links.filter((link) => profile.id === link.assigned)
+    let href = assigned_links.length < 1 ? null : assigned_links[0].href;
+    return { ...profile, href, count: assigned_links.length }
+  })
+}
