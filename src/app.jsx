@@ -13,7 +13,7 @@ export default function App() {
 
   const loadData = async () => {
     try {
-      await fetch('/profiles.json')
+      await fetch('/api/profiles.json')
         .then(resp => resp.json())
         .then(setData)
     } catch (error) {
