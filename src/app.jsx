@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import PageLayout from './layouts/page.layout'
-import Header from './layouts/header'
+import PageLayout from './layouts/PageLayout'
+import Header from './components/common/Header'
 import Main from './components/Main';
 import PageContent from './components/PageContent'
 import Thumbs from './components/Thumbs'
@@ -22,6 +22,7 @@ export default function App() {
   }
 
   useEffect(() => {
+    document.title = pages.main.title
     loadData()
   }, [])
 
