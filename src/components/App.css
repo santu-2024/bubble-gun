@@ -433,3 +433,38 @@ img {
   max-width: 1360px;
   padding: 64px 80px;
 }
+
+.hero-main-content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-main-content {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-basis: 66%;
+  -ms-flex-preferred-size: 66%;
+  flex-basis: 66%;
+  margin-right: auto;
+  max-width: 490px;
+  padding-right: 20px;
+}
+
+.hero-title {
+  font-family: 'Poppins';
+  font-size: 60px;
+  line-height: 75px;
+  color: #fff;
+  /* margin-bottom: 28px; */
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-end: 0.67em;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}

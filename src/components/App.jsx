@@ -11,7 +11,7 @@ export default function App(props) {
   return (
     <PageLayout>
       <Header />
-      <HeroContent />
+      <HeroContent title={props.pages.main.title} />
       <Main>
         <PageContent title={props.pages.main.title} role='contentinfo'>
           <div className='text more'>{props.pages.main.description}</div>
